@@ -19,3 +19,7 @@ bin/
 
 # test files in non java-directory
 PHPDatabaseCompatibility/tests/*json
+
+# Node.js resources & modules
+NodeJsDatabaseCompatibility/resources/
+NodeJsDatabaseCompatibility/node_modules/
