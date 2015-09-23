@@ -1,0 +1,46 @@
+2: Creating credential id: test
+4: Creating session id: testCRUD
+6: Executing statement: DROP TABLE IF EXISTS decimal_test
+7: Executing statement: CREATE TABLE decimal_test (i0 DECIMAL)
+8: Unkown statement action: close
+10: Creating prep'd statement: insert
+13: Creating prep'd statement: query
+16: Creating prep'd statement: update
+23: Creating prep'd statement: delete
+28: Executing statement: DROP TABLE IF EXISTS decimal_test
+29: Unkown statement action: close
+30: Closing session id: testCRUD
+32: Creating session id: testPstmt
+34: Executing statement: DROP TABLE IF EXISTS decimal_test
+35: Executing statement: CREATE TABLE decimal_test (i0 DECIMAL(20))
+36: Unkown statement action: close
+38: Creating prep'd statement: insert
+49: Closing prep'd statement: insert
+51: Creating prep'd statement: query
+55: Closing prep'd statement: query
+57: Executing statement: DROP TABLE IF EXISTS decimal_test
+58: Unkown statement action: close
+59: Closing session id: testPstmt
+61: Creating session id: testPstmt
+63: Executing statement: DROP TABLE IF EXISTS decimal_test
+64: Executing statement: CREATE TABLE decimal_test (i0 DECIMAL(20),i1 DECIMAL(20),i2 DECIMAL(20),i3 DECIMAL(20),i4 DECIMAL(20),i5 DECIMAL(20),i6 DECIMAL(20),i7 DECIMAL(20),i8 DECIMAL(20),i9 DECIMAL(20),i10 DECIMAL(20),i11 DECIMAL(20),i12 DECIMAL(20),i13 DECIMAL(20),i14 DECIMAL(20),i15 DECIMAL(20),i16 DECIMAL(20),i17 DECIMAL(20),i18 DECIMAL(20),i19 DECIMAL(20),i20 DECIMAL(20),i21 DECIMAL(20),i22 DECIMAL(20),i23 DECIMAL(20),i24 DECIMAL(20),i25 DECIMAL(20),i26 DECIMAL(20),i27 DECIMAL(20),i28 DECIMAL(20),i29 DECIMAL(20),i30 DECIMAL(20),i31 DECIMAL(20),i32 DECIMAL(20),i33 DECIMAL(20),i34 DECIMAL(20),i35 DECIMAL(20),i36 DECIMAL(20),i37 DECIMAL(20),i38 DECIMAL(20),i39 DECIMAL(20),i40 DECIMAL(20),i41 DECIMAL(20),i42 DECIMAL(20),i43 DECIMAL(20),i44 DECIMAL(20),i45 DECIMAL(20),i46 DECIMAL(20),i47 DECIMAL(20),i48 DECIMAL(20),i49 DECIMAL(20))
+65: Unkown statement action: close
+67: Creating prep'd statement: insert
+78: Closing prep'd statement: insert
+80: Creating prep'd statement: query
+84: Closing prep'd statement: query
+86: Executing statement: DROP TABLE IF EXISTS decimal_test
+87: Unkown statement action: close
+88: Closing session id: testPstmt
+90: Creating session id: testPstmt
+92: Executing statement: DROP TABLE IF EXISTS decimal_test
+93: Executing statement: CREATE TABLE decimal_test (i0 DECIMAL(20),i1 DECIMAL(20),i2 DECIMAL(20),i3 DECIMAL(20),i4 DECIMAL(20),i5 DECIMAL(20),i6 DECIMAL(20),i7 DECIMAL(20),i8 DECIMAL(20),i9 DECIMAL(20),i10 DECIMAL(20),i11 DECIMAL(20),i12 DECIMAL(20),i13 DECIMAL(20),i14 DECIMAL(20),i15 DECIMAL(20),i16 DECIMAL(20),i17 DECIMAL(20),i18 DECIMAL(20),i19 DECIMAL(20),i20 DECIMAL(20),i21 DECIMAL(20),i22 DECIMAL(20),i23 DECIMAL(20),i24 DECIMAL(20),i25 DECIMAL(20),i26 DECIMAL(20),i27 DECIMAL(20),i28 DECIMAL(20),i29 DECIMAL(20),i30 DECIMAL(20),i31 DECIMAL(20),i32 DECIMAL(20),i33 DECIMAL(20),i34 DECIMAL(20),i35 DECIMAL(20),i36 DECIMAL(20),i37 DECIMAL(20),i38 DECIMAL(20),i39 DECIMAL(20),i40 DECIMAL(20),i41 DECIMAL(20),i42 DECIMAL(20),i43 DECIMAL(20),i44 DECIMAL(20),i45 DECIMAL(20),i46 DECIMAL(20),i47 DECIMAL(20),i48 DECIMAL(20),i49 DECIMAL(20),i50 DECIMAL(20),i51 DECIMAL(20),i52 DECIMAL(20),i53 DECIMAL(20),i54 DECIMAL(20),i55 DECIMAL(20),i56 DECIMAL(20),i57 DECIMAL(20),i58 DECIMAL(20),i59 DECIMAL(20),i60 DECIMAL(20),i61 DECIMAL(20),i62 DECIMAL(20),i63 DECIMAL(20),i64 DECIMAL(20),i65 DECIMAL(20),i66 DECIMAL(20),i67 DECIMAL(20),i68 DECIMAL(20),i69 DECIMAL(20),i70 DECIMAL(20),i71 DECIMAL(20),i72 DECIMAL(20),i73 DECIMAL(20),i74 DECIMAL(20),i75 DECIMAL(20),i76 DECIMAL(20),i77 DECIMAL(20),i78 DECIMAL(20),i79 DECIMAL(20),i80 DECIMAL(20),i81 DECIMAL(20),i82 DECIMAL(20),i83 DECIMAL(20),i84 DECIMAL(20),i85 DECIMAL(20),i86 DECIMAL(20),i87 DECIMAL(20),i88 DECIMAL(20),i89 DECIMAL(20),i90 DECIMAL(20),i91 DECIMAL(20),i92 DECIMAL(20),i93 DECIMAL(20),i94 DECIMAL(20),i95 DECIMAL(20),i96 DECIMAL(20),i97 DECIMAL(20),i98 DECIMAL(20),i99 DECIMAL(20))
+94: Unkown statement action: close
+96: Creating prep'd statement: insert
+107: Closing prep'd statement: insert
+109: Creating prep'd statement: query
+113: Closing prep'd statement: query
+115: Executing statement: DROP TABLE IF EXISTS decimal_test
+116: Unkown statement action: close
+117: Closing session id: testPstmt
+118: Closing credential id: test

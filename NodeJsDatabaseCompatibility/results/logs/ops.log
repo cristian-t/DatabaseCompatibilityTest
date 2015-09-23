@@ -1,0 +1,8 @@
+2: Creating credential id: mydb
+3: Creating session id: undefined
+5: Executing statement: select count(tabname) as count from systables where tabid > 99
+6: Unkown statement action: create
+7: Executing statement: select count(tabname) as count from systables where tabid > 99
+8: Unkown statement action: close
+9: Creating prep'd statement: test
+10: [ERROR] [IBM][CLI Driver] CLI0123E  SQL data type out of range. SQLSTATE=HY004

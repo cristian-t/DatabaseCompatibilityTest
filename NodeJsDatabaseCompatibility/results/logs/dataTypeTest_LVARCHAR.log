@@ -1,0 +1,79 @@
+2: Creating credential id: test
+4: Creating session id: testCRUD
+6: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+7: Executing statement: CREATE TABLE lvarchar_test (i0 LVARCHAR(500))
+8: Unkown statement action: close
+10: Creating prep'd statement: insert
+13: Creating prep'd statement: query
+16: Creating prep'd statement: update
+23: Creating prep'd statement: delete
+28: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+29: Unkown statement action: close
+30: Closing session id: testCRUD
+32: Creating session id: testPstmt
+34: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+35: Executing statement: CREATE TABLE lvarchar_test (i0 LVARCHAR(1024))
+36: Unkown statement action: close
+38: Creating prep'd statement: insert
+42: Closing prep'd statement: insert
+44: Creating prep'd statement: query
+46: Closing prep'd statement: query
+48: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+49: Unkown statement action: close
+50: Closing session id: testPstmt
+52: Creating session id: testPstmt
+54: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+55: Executing statement: CREATE TABLE lvarchar_test (i0 LVARCHAR(1024),i1 LVARCHAR(1024),i2 LVARCHAR(1024),i3 LVARCHAR(1024),i4 LVARCHAR(1024))
+56: Unkown statement action: close
+58: Creating prep'd statement: insert
+62: Closing prep'd statement: insert
+64: Creating prep'd statement: query
+66: Closing prep'd statement: query
+68: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+69: Unkown statement action: close
+70: Closing session id: testPstmt
+72: Creating session id: testPstmt
+74: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+75: Executing statement: CREATE TABLE lvarchar_test (i0 LVARCHAR(2048))
+76: Unkown statement action: close
+78: Creating prep'd statement: insert
+82: Closing prep'd statement: insert
+84: Creating prep'd statement: query
+86: Closing prep'd statement: query
+88: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+89: Unkown statement action: close
+90: Closing session id: testPstmt
+92: Creating session id: testPstmt
+94: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+95: Executing statement: CREATE TABLE lvarchar_test (i0 LVARCHAR(2048),i1 LVARCHAR(2048),i2 LVARCHAR(2048),i3 LVARCHAR(2048),i4 LVARCHAR(2048))
+96: Unkown statement action: close
+98: Creating prep'd statement: insert
+102: Closing prep'd statement: insert
+104: Creating prep'd statement: query
+106: Closing prep'd statement: query
+108: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+109: Unkown statement action: close
+110: Closing session id: testPstmt
+112: Creating session id: testPstmt
+114: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+115: Executing statement: CREATE TABLE lvarchar_test (i0 LVARCHAR(5000))
+116: Unkown statement action: close
+118: Creating prep'd statement: insert
+122: Closing prep'd statement: insert
+124: Creating prep'd statement: query
+126: Closing prep'd statement: query
+128: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+129: Unkown statement action: close
+130: Closing session id: testPstmt
+132: Creating session id: testPstmt
+134: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+135: Executing statement: CREATE TABLE lvarchar_test (i0 LVARCHAR(5000),i1 LVARCHAR(5000),i2 LVARCHAR(5000),i3 LVARCHAR(5000),i4 LVARCHAR(5000))
+136: Unkown statement action: close
+138: Creating prep'd statement: insert
+142: Closing prep'd statement: insert
+144: Creating prep'd statement: query
+146: Closing prep'd statement: query
+148: Executing statement: DROP TABLE IF EXISTS lvarchar_test
+149: Unkown statement action: close
+150: Closing session id: testPstmt
+151: Closing credential id: test

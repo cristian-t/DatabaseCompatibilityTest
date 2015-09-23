@@ -1,0 +1,46 @@
+2: Creating credential id: test
+4: Creating session id: testCRUD
+6: Executing statement: DROP TABLE IF EXISTS int_test
+7: Executing statement: CREATE TABLE int_test (i0 INT)
+8: Unkown statement action: close
+10: Creating prep'd statement: insert
+13: Creating prep'd statement: query
+16: Creating prep'd statement: update
+23: Creating prep'd statement: delete
+28: Executing statement: DROP TABLE IF EXISTS int_test
+29: Unkown statement action: close
+30: Closing session id: testCRUD
+32: Creating session id: testPstmt
+34: Executing statement: DROP TABLE IF EXISTS int_test
+35: Executing statement: CREATE TABLE int_test (i0 INT,i1 INT,i2 INT)
+36: Unkown statement action: close
+38: Creating prep'd statement: insert
+49: Closing prep'd statement: insert
+51: Creating prep'd statement: query
+55: Closing prep'd statement: query
+57: Executing statement: DROP TABLE IF EXISTS int_test
+58: Unkown statement action: close
+59: Closing session id: testPstmt
+61: Creating session id: testPstmt
+63: Executing statement: DROP TABLE IF EXISTS int_test
+64: Executing statement: CREATE TABLE int_test (i0 INT,i1 INT,i2 INT,i3 INT,i4 INT,i5 INT,i6 INT,i7 INT,i8 INT,i9 INT,i10 INT,i11 INT,i12 INT,i13 INT,i14 INT,i15 INT,i16 INT,i17 INT,i18 INT,i19 INT,i20 INT,i21 INT,i22 INT,i23 INT,i24 INT,i25 INT,i26 INT,i27 INT,i28 INT,i29 INT,i30 INT,i31 INT,i32 INT,i33 INT,i34 INT,i35 INT,i36 INT,i37 INT,i38 INT,i39 INT,i40 INT,i41 INT,i42 INT,i43 INT,i44 INT,i45 INT,i46 INT,i47 INT,i48 INT,i49 INT)
+65: Unkown statement action: close
+67: Creating prep'd statement: insert
+78: Closing prep'd statement: insert
+80: Creating prep'd statement: query
+84: Closing prep'd statement: query
+86: Executing statement: DROP TABLE IF EXISTS int_test
+87: Unkown statement action: close
+88: Closing session id: testPstmt
+90: Creating session id: testPstmt
+92: Executing statement: DROP TABLE IF EXISTS int_test
+93: Executing statement: CREATE TABLE int_test (i0 INT,i1 INT,i2 INT,i3 INT,i4 INT,i5 INT,i6 INT,i7 INT,i8 INT,i9 INT,i10 INT,i11 INT,i12 INT,i13 INT,i14 INT,i15 INT,i16 INT,i17 INT,i18 INT,i19 INT,i20 INT,i21 INT,i22 INT,i23 INT,i24 INT,i25 INT,i26 INT,i27 INT,i28 INT,i29 INT,i30 INT,i31 INT,i32 INT,i33 INT,i34 INT,i35 INT,i36 INT,i37 INT,i38 INT,i39 INT,i40 INT,i41 INT,i42 INT,i43 INT,i44 INT,i45 INT,i46 INT,i47 INT,i48 INT,i49 INT,i50 INT,i51 INT,i52 INT,i53 INT,i54 INT,i55 INT,i56 INT,i57 INT,i58 INT,i59 INT,i60 INT,i61 INT,i62 INT,i63 INT,i64 INT,i65 INT,i66 INT,i67 INT,i68 INT,i69 INT,i70 INT,i71 INT,i72 INT,i73 INT,i74 INT,i75 INT,i76 INT,i77 INT,i78 INT,i79 INT,i80 INT,i81 INT,i82 INT,i83 INT,i84 INT,i85 INT,i86 INT,i87 INT,i88 INT,i89 INT,i90 INT,i91 INT,i92 INT,i93 INT,i94 INT,i95 INT,i96 INT,i97 INT,i98 INT,i99 INT)
+94: Unkown statement action: close
+96: Creating prep'd statement: insert
+107: Closing prep'd statement: insert
+109: Creating prep'd statement: query
+113: Closing prep'd statement: query
+115: Executing statement: DROP TABLE IF EXISTS int_test
+116: Unkown statement action: close
+117: Closing session id: testPstmt
+118: Closing credential id: test

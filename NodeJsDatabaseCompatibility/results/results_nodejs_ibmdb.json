@@ -1,0 +1,23 @@
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_BIGINT.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_BIGSERIAL.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_BOOLEAN.json","result":false,"detail":"[IBM][CLI Driver] CLI0102E  Invalid conversion. SQLSTATE=07006"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_CHAR.json","result":false,"detail":"Unable to execute prepared statement: [IBM][CLI Driver] SQL30081N  A communication error has been detected. Communication protocol being used: \"TCP/IP\".  Communication API being used: \"SOCKETS\".  Location where the error was detected: \"9.25.157.64\".  Communication function detecting the error: \"recv\".  Protocol specific error code(s): \"10060\", \"*\", \"*\".  SQLSTATE=08001\r\n"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_DATE.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_DATETIME0.json","result":false,"detail":"Unexpected result.\nExpected: [{\"i0\":\"2041-10-15 09:06:19\"}]\nReceived: [{\"i0\":\"2041-10-15 09:06:19.000000\"}]"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_DATETIME1.json","result":false,"detail":"Unexpected result.\nExpected: [{\"i0\":\"2038-07-11 08:30:05.7\"}]\nReceived: [{\"i0\":\"2038-07-11 08:30:05.700000\"}]"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_DATETIME2.json","result":false,"detail":"Unexpected result.\nExpected: [{\"i0\":\"2002-04-27 03:01:29.22\"}]\nReceived: [{\"i0\":\"2002-04-27 03:01:29.220000\"}]"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_DATETIME3.json","result":false,"detail":"Unexpected result.\nExpected: [{\"i0\":\"2032-03-27 09:23:51.252\"}]\nReceived: [{\"i0\":\"2032-03-27 09:23:51.252000\"}]"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_DATETIME4.json","result":false,"detail":"Unexpected result.\nExpected: [{\"i0\":\"2044-12-09 03:56:32.6246\"}]\nReceived: [{\"i0\":\"2044-12-09 03:56:32.624600\"}]"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_DATETIME5.json","result":false,"detail":"Unexpected result.\nExpected: [{\"i0\":\"2044-12-09 03:56:32.62424\"}]\nReceived: [{\"i0\":\"2044-12-09 03:56:32.624240\"}]"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_DECIMAL.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_INT.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_LVARCHAR.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_NVARCHAR.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_SERIAL.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_SMALLFLOAT.json","result":false,"detail":"Unexpected result.\nExpected: [{\"i0\":84.823006}]\nReceived: [{\"i0\":84.82300567626953}]"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_SMALLINT.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"dataTypeTest_VARCHAR.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"ops.json","result":false,"detail":"[IBM][CLI Driver] CLI0123E  SQL data type out of range. SQLSTATE=HY004"}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"preparedStatementTest_1.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"preparedStatementTest_2.json","result":true}
+{"language":"nodejs","client":"ibmdb","server":"Informix","test":"transactionTest.json","result":false,"detail":"Unable to start transaction: [IBM][CLI Driver] CLI0126E  Operation invalid at this time. SQLSTATE=HY011"}

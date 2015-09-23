@@ -1,0 +1,17 @@
+{
+  "name": "NodeJsDatabaseCompatibility",
+  "version": "0.0.1",
+  "description": "Node.js-Informix Database Compatibility Test",
+  "main": "main.js",
+  "dependencies": {
+    "deep-equal": "^1.0.1",
+    "ibm_db": "^0.0.15",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristian Traistaru <traistar@us.ibm.com>",
+  "license": "ISC"
+}

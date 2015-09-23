@@ -1,0 +1,10 @@
+2: Creating credential id: test
+4: Creating session id: testCRUD
+6: Executing statement: DROP TABLE IF EXISTS date_test5
+7: Executing statement: CREATE TABLE date_test5 (i0 DATETIME YEAR TO FRACTION(5))
+8: Unkown statement action: close
+10: Creating prep'd statement: insert
+13: Creating prep'd statement: query
+14: [ERROR] Unexpected result.
+Expected: [{"i0":"2044-12-09 03:56:32.62424"}]
+Received: [{"i0":"2044-12-09 03:56:32.624240"}]

@@ -1,0 +1,20 @@
+2: Creating credential id: test
+3: Creating session id: testPstmt
+5: Executing statement: DROP TABLE IF EXISTS test1
+6: Executing statement: CREATE TABLE test1 (id INT,location CHAR(20),home CHAR(20),notes VARCHAR(20))
+7: Executing statement: DROP TABLE IF EXISTS test2
+8: Executing statement: CREATE TABLE test2 (id INT,price INT,notes VARCHAR(20))
+9: Unkown statement action: close
+11: Creating prep'd statement: insert1
+12: Creating prep'd statement: insert2
+33: Unkown statement action: close
+34: Unkown statement action: close
+36: Creating prep'd statement: query1
+37: Creating prep'd statement: query2
+56: Unkown statement action: close
+57: Unkown statement action: close
+58: Executing statement: DROP TABLE IF EXISTS test1
+59: Executing statement: DROP TABLE IF EXISTS test2
+60: Unkown statement action: close
+61: Closing session id: testPstmt
+62: Closing credential id: test

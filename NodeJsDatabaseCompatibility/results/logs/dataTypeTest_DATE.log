@@ -1,0 +1,46 @@
+2: Creating credential id: test
+4: Creating session id: testCRUD
+6: Executing statement: DROP TABLE IF EXISTS date_test
+7: Executing statement: CREATE TABLE date_test (i0 DATE)
+8: Unkown statement action: close
+10: Creating prep'd statement: insert
+13: Creating prep'd statement: query
+16: Creating prep'd statement: update
+23: Creating prep'd statement: delete
+28: Executing statement: DROP TABLE IF EXISTS date_test
+29: Unkown statement action: close
+30: Closing session id: testCRUD
+32: Creating session id: testPstmt
+34: Executing statement: DROP TABLE IF EXISTS date_test
+35: Executing statement: CREATE TABLE date_test (i0 DATE)
+36: Unkown statement action: close
+38: Creating prep'd statement: insert
+49: Closing prep'd statement: insert
+51: Creating prep'd statement: query
+54: Closing prep'd statement: query
+56: Executing statement: DROP TABLE IF EXISTS date_test
+57: Unkown statement action: close
+58: Closing session id: testPstmt
+60: Creating session id: testPstmt
+62: Executing statement: DROP TABLE IF EXISTS date_test
+63: Executing statement: CREATE TABLE date_test (i0 DATE,i1 DATE,i2 DATE,i3 DATE,i4 DATE,i5 DATE,i6 DATE,i7 DATE,i8 DATE,i9 DATE,i10 DATE,i11 DATE,i12 DATE,i13 DATE,i14 DATE,i15 DATE,i16 DATE,i17 DATE,i18 DATE,i19 DATE,i20 DATE,i21 DATE,i22 DATE,i23 DATE,i24 DATE,i25 DATE,i26 DATE,i27 DATE,i28 DATE,i29 DATE,i30 DATE,i31 DATE,i32 DATE,i33 DATE,i34 DATE,i35 DATE,i36 DATE,i37 DATE,i38 DATE,i39 DATE,i40 DATE,i41 DATE,i42 DATE,i43 DATE,i44 DATE,i45 DATE,i46 DATE,i47 DATE,i48 DATE,i49 DATE)
+64: Unkown statement action: close
+66: Creating prep'd statement: insert
+77: Closing prep'd statement: insert
+79: Creating prep'd statement: query
+82: Closing prep'd statement: query
+84: Executing statement: DROP TABLE IF EXISTS date_test
+85: Unkown statement action: close
+86: Closing session id: testPstmt
+88: Creating session id: testPstmt
+90: Executing statement: DROP TABLE IF EXISTS date_test
+91: Executing statement: CREATE TABLE date_test (i0 DATE,i1 DATE,i2 DATE,i3 DATE,i4 DATE,i5 DATE,i6 DATE,i7 DATE,i8 DATE,i9 DATE,i10 DATE,i11 DATE,i12 DATE,i13 DATE,i14 DATE,i15 DATE,i16 DATE,i17 DATE,i18 DATE,i19 DATE,i20 DATE,i21 DATE,i22 DATE,i23 DATE,i24 DATE,i25 DATE,i26 DATE,i27 DATE,i28 DATE,i29 DATE,i30 DATE,i31 DATE,i32 DATE,i33 DATE,i34 DATE,i35 DATE,i36 DATE,i37 DATE,i38 DATE,i39 DATE,i40 DATE,i41 DATE,i42 DATE,i43 DATE,i44 DATE,i45 DATE,i46 DATE,i47 DATE,i48 DATE,i49 DATE,i50 DATE,i51 DATE,i52 DATE,i53 DATE,i54 DATE,i55 DATE,i56 DATE,i57 DATE,i58 DATE,i59 DATE,i60 DATE,i61 DATE,i62 DATE,i63 DATE,i64 DATE,i65 DATE,i66 DATE,i67 DATE,i68 DATE,i69 DATE,i70 DATE,i71 DATE,i72 DATE,i73 DATE,i74 DATE,i75 DATE,i76 DATE,i77 DATE,i78 DATE,i79 DATE,i80 DATE,i81 DATE,i82 DATE,i83 DATE,i84 DATE,i85 DATE,i86 DATE,i87 DATE,i88 DATE,i89 DATE,i90 DATE,i91 DATE,i92 DATE,i93 DATE,i94 DATE,i95 DATE,i96 DATE,i97 DATE,i98 DATE,i99 DATE)
+92: Unkown statement action: close
+94: Creating prep'd statement: insert
+105: Closing prep'd statement: insert
+107: Creating prep'd statement: query
+110: Closing prep'd statement: query
+112: Executing statement: DROP TABLE IF EXISTS date_test
+113: Unkown statement action: close
+114: Closing session id: testPstmt
+115: Closing credential id: test

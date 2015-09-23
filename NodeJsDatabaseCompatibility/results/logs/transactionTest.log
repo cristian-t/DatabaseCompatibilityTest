@@ -1,0 +1,7 @@
+2: Creating credential id: test
+3: Creating session id: testTxn
+5: Executing statement: DROP TABLE IF EXISTS transaction_test
+6: Executing statement: CREATE TABLE transaction_test (int_col INT,varchar_col VARCHAR(20))
+7: Unkown statement action: close
+9: Starting transaction on session: testTxn
+9: [ERROR] Unable to start transaction: [IBM][CLI Driver] CLI0126E  Operation invalid at this time. SQLSTATE=HY011

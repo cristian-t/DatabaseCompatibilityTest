@@ -1,0 +1,52 @@
+2: Creating credential id: test
+4: Creating session id: testCRUD
+6: Executing statement: DROP TABLE IF EXISTS char_test
+7: Executing statement: CREATE TABLE char_test (i0 CHAR(1))
+8: Unkown statement action: close
+10: Creating prep'd statement: insert
+13: Creating prep'd statement: query
+16: Creating prep'd statement: update
+23: Creating prep'd statement: delete
+28: Executing statement: DROP TABLE IF EXISTS char_test
+29: Unkown statement action: close
+30: Closing session id: testCRUD
+32: Creating session id: testPstmt
+34: Executing statement: DROP TABLE IF EXISTS char_test
+35: Executing statement: CREATE TABLE char_test (i0 CHAR(2))
+36: Unkown statement action: close
+38: Creating prep'd statement: insert
+49: Closing prep'd statement: insert
+51: Creating prep'd statement: query
+55: Closing prep'd statement: query
+57: Executing statement: DROP TABLE IF EXISTS char_test
+58: Unkown statement action: close
+59: Closing session id: testPstmt
+61: Creating session id: testPstmt
+63: Executing statement: DROP TABLE IF EXISTS char_test
+64: Executing statement: CREATE TABLE char_test (i0 CHAR(2),i1 CHAR(2),i2 CHAR(2),i3 CHAR(2),i4 CHAR(2),i5 CHAR(2),i6 CHAR(2),i7 CHAR(2),i8 CHAR(2),i9 CHAR(2),i10 CHAR(2),i11 CHAR(2),i12 CHAR(2),i13 CHAR(2),i14 CHAR(2),i15 CHAR(2),i16 CHAR(2),i17 CHAR(2),i18 CHAR(2),i19 CHAR(2),i20 CHAR(2),i21 CHAR(2),i22 CHAR(2),i23 CHAR(2),i24 CHAR(2),i25 CHAR(2),i26 CHAR(2),i27 CHAR(2),i28 CHAR(2),i29 CHAR(2),i30 CHAR(2),i31 CHAR(2),i32 CHAR(2),i33 CHAR(2),i34 CHAR(2),i35 CHAR(2),i36 CHAR(2),i37 CHAR(2),i38 CHAR(2),i39 CHAR(2),i40 CHAR(2),i41 CHAR(2),i42 CHAR(2),i43 CHAR(2),i44 CHAR(2),i45 CHAR(2),i46 CHAR(2),i47 CHAR(2),i48 CHAR(2),i49 CHAR(2))
+65: Unkown statement action: close
+67: Creating prep'd statement: insert
+78: Closing prep'd statement: insert
+80: Creating prep'd statement: query
+84: Closing prep'd statement: query
+86: Executing statement: DROP TABLE IF EXISTS char_test
+87: Unkown statement action: close
+88: Closing session id: testPstmt
+90: Creating session id: testPstmt
+92: Executing statement: DROP TABLE IF EXISTS char_test
+93: Executing statement: CREATE TABLE char_test (i0 CHAR(100))
+94: Unkown statement action: close
+96: Creating prep'd statement: insert
+107: Closing prep'd statement: insert
+109: Creating prep'd statement: query
+113: Closing prep'd statement: query
+115: Executing statement: DROP TABLE IF EXISTS char_test
+116: Unkown statement action: close
+117: Closing session id: testPstmt
+119: Creating session id: testPstmt
+121: Executing statement: DROP TABLE IF EXISTS char_test
+122: Executing statement: CREATE TABLE char_test (i0 CHAR(100),i1 CHAR(100),i2 CHAR(100),i3 CHAR(100),i4 CHAR(100),i5 CHAR(100),i6 CHAR(100),i7 CHAR(100),i8 CHAR(100),i9 CHAR(100),i10 CHAR(100),i11 CHAR(100),i12 CHAR(100),i13 CHAR(100),i14 CHAR(100),i15 CHAR(100),i16 CHAR(100),i17 CHAR(100),i18 CHAR(100),i19 CHAR(100),i20 CHAR(100),i21 CHAR(100),i22 CHAR(100),i23 CHAR(100),i24 CHAR(100),i25 CHAR(100),i26 CHAR(100),i27 CHAR(100),i28 CHAR(100),i29 CHAR(100),i30 CHAR(100),i31 CHAR(100),i32 CHAR(100),i33 CHAR(100),i34 CHAR(100),i35 CHAR(100),i36 CHAR(100),i37 CHAR(100),i38 CHAR(100),i39 CHAR(100),i40 CHAR(100),i41 CHAR(100),i42 CHAR(100),i43 CHAR(100),i44 CHAR(100),i45 CHAR(100),i46 CHAR(100),i47 CHAR(100),i48 CHAR(100),i49 CHAR(100))
+123: Unkown statement action: close
+125: Creating prep'd statement: insert
+130: [ERROR] Unable to execute prepared statement: [IBM][CLI Driver] SQL30081N  A communication error has been detected. Communication protocol being used: "TCP/IP".  Communication API being used: "SOCKETS".  Location where the error was detected: "9.25.157.64".  Communication function detecting the error: "recv".  Protocol specific error code(s): "10060", "*", "*".  SQLSTATE=08001
+

@@ -1,0 +1,24 @@
+2: Creating credential id: test
+4: Creating session id: testCRUD
+6: Executing statement: DROP TABLE IF EXISTS bigint_test
+7: Executing statement: CREATE TABLE bigint_test (i0 BIGINT)
+8: Unkown statement action: close
+10: Creating prep'd statement: insert
+13: Creating prep'd statement: query
+16: Creating prep'd statement: update
+23: Creating prep'd statement: delete
+28: Executing statement: DROP TABLE IF EXISTS bigint_test
+29: Unkown statement action: close
+30: Closing session id: testCRUD
+32: Creating session id: testPstmt
+34: Executing statement: DROP TABLE IF EXISTS bigint_test
+35: Executing statement: CREATE TABLE bigint_test (i0 BIGINT,i1 BIGINT,i2 BIGINT)
+36: Unkown statement action: close
+38: Creating prep'd statement: insert
+49: Closing prep'd statement: insert
+51: Creating prep'd statement: query
+55: Closing prep'd statement: query
+57: Executing statement: DROP TABLE IF EXISTS bigint_test
+58: Unkown statement action: close
+59: Closing session id: testPstmt
+60: Closing credential id: test
