@@ -30,8 +30,12 @@ try
   {
     for( i = 0; i < inputDirFiles.length; i++ )
     {
-      if( inputDirFiles[i].substr( -5 ) == ".json" )
-        testFiles.push( inputDirFiles[i] );
+      if( inputDirFiles[i].substr( -5 ) != ".json" ) continue;
+
+      // Skip INT8 and SERIAL8 tests when running all tests
+      if( inputDirFiles[i].indexOf( "INT8" ) != -1 || inputDirFiles[i].indexOf( "SERIAL8" ) != -1 ) continue;
+
+      testFiles.push( inputDirFiles[i] );
     }
   }
 
