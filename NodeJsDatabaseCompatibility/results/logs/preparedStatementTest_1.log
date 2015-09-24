@@ -4,7 +4,6 @@
 6: Executing statement: CREATE TABLE test1 (int_col INT,varchar_col VARCHAR(20),char_col CHAR(20),varchar_col2 VARCHAR(20))
 7: Executing statement: DROP TABLE IF EXISTS test2
 8: Executing statement: CREATE TABLE test2 (int_col INT,int_col2 INT,varchar_col VARCHAR(20))
-9: Unkown statement action: close
 11: Creating prep'd statement: pstmt1
 12: Creating prep'd statement: pstmt2
 35: Creating prep'd statement: pstmt3
@@ -17,6 +16,5 @@
 58: Closing prep'd statement: pstmt3
 59: Executing statement: DROP TABLE IF EXISTS test1
 60: Executing statement: DROP TABLE IF EXISTS test2
-61: Unkown statement action: close
 62: Closing session id: testPstmt
 63: Closing credential id: test

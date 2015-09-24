@@ -2,9 +2,11 @@
 4: Creating session id: testCRUD
 6: Executing statement: DROP TABLE IF EXISTS date_test1
 7: Executing statement: CREATE TABLE date_test1 (i0 DATETIME YEAR TO FRACTION(1))
-8: Unkown statement action: close
 10: Creating prep'd statement: insert
 13: Creating prep'd statement: query
+Expected: 2038-07-11 08:30:05.7
+Received: 2038-07-11 08:30:05.700000
 14: [ERROR] Unexpected result.
 Expected: [{"i0":"2038-07-11 08:30:05.7"}]
 Received: [{"i0":"2038-07-11 08:30:05.700000"}]
+14: Cleaning up...

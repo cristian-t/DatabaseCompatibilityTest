@@ -2,22 +2,18 @@
 4: Creating session id: testCRUD
 6: Executing statement: DROP TABLE IF EXISTS serial_test
 7: Executing statement: CREATE TABLE serial_test (i0 SERIAL)
-8: Unkown statement action: close
 10: Creating prep'd statement: insert
 13: Creating prep'd statement: query
 17: Creating prep'd statement: delete
 22: Executing statement: DROP TABLE IF EXISTS serial_test
-23: Unkown statement action: close
 24: Closing session id: testCRUD
 26: Creating session id: testPstmt
 28: Executing statement: DROP TABLE IF EXISTS serial_test
 29: Executing statement: CREATE TABLE serial_test (id SERIAL,value VARCHAR(20))
-30: Unkown statement action: close
 32: Creating prep'd statement: insert
 43: Closing prep'd statement: insert
 45: Creating prep'd statement: query
 49: Closing prep'd statement: query
 51: Executing statement: DROP TABLE IF EXISTS serial_test
-52: Unkown statement action: close
 53: Closing session id: testPstmt
 54: Closing credential id: test

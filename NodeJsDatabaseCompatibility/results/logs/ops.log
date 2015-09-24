@@ -3,6 +3,11 @@
 5: Executing statement: select count(tabname) as count from systables where tabid > 99
 6: Unkown statement action: create
 7: Executing statement: select count(tabname) as count from systables where tabid > 99
-8: Unkown statement action: close
 9: Creating prep'd statement: test
-10: [ERROR] [IBM][CLI Driver] CLI0123E  SQL data type out of range. SQLSTATE=HY004
+13: Closing prep'd statement: test
+15: Executing statement: drop table if exists people
+16: Executing statement: create table people(firstName varchar(10), lastName varchar(10), age int)
+17: Creating prep'd statement: insertPeople
+20: Closing prep'd statement: insertPeople
+21: Executing statement: select * from people
+22: Executing statement: drop table if exists people

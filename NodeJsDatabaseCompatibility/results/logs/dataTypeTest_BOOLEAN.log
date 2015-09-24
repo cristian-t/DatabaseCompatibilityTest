@@ -2,6 +2,6 @@
 4: Creating session id: testCRUD
 6: Executing statement: DROP TABLE IF EXISTS boolean_test
 7: Executing statement: CREATE TABLE boolean_test (i0 BOOLEAN)
-8: Unkown statement action: close
 10: Creating prep'd statement: insert
 11: [ERROR] [IBM][CLI Driver] CLI0102E  Invalid conversion. SQLSTATE=07006
+11: Cleaning up...

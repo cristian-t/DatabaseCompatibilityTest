@@ -2,9 +2,11 @@
 4: Creating session id: testCRUD
 6: Executing statement: DROP TABLE IF EXISTS date_test0
 7: Executing statement: CREATE TABLE date_test0 (i0 DATETIME YEAR TO SECOND)
-8: Unkown statement action: close
 10: Creating prep'd statement: insert
 13: Creating prep'd statement: query
+Expected: 2041-10-15 09:06:19
+Received: 2041-10-15 09:06:19.000000
 14: [ERROR] Unexpected result.
 Expected: [{"i0":"2041-10-15 09:06:19"}]
 Received: [{"i0":"2041-10-15 09:06:19.000000"}]
+14: Cleaning up...
