@@ -4,6 +4,34 @@ var deepEqual = require( "deep-equal" );
 var SimpleLog = require( "./SimpleLog.js" );
 var ClientManager = require( "./DBClientManager.js" );
 
+function numberToBinaryString( v )
+{
+  var float = Float64Array( 1 );
+  var bytes = Uint8Array( float.buffer );
+
+  float[0] = v;
+
+  var binary = "";
+  var pos = 0;
+  for( var j = 7; j >= 0; j-- )
+  {
+    for( var i = 7; i >= 0; i-- )
+    {
+      binary += ( bytes[j] & ( 1 << i ) ) ? "1" : "0";
+      pos++;
+    }
+  }
+
+  return binary.substring( 0 , 32 );
+}
+
+function testSmallFloat( f1 , f2 )
+{
+  var bs1 = numberToBinaryString( f1 );
+  var bs2 = numberToBinaryString( f2 );
+  return bs1 === bs2;
+}
+
 var Resources = {};
 
 Resources.credentials = function( op )
@@ -169,7 +197,7 @@ Resources.preparedStatement = function( op )
 
     if( op.expectedResults )
     {
-      if( !deepEqual( op.expectedResults , data ) )
+      if( !this.testResults( data , op.expectedResults ) )
       {
         throw new Error( "Unexpected result." +
                          "\nExpected: " + JSON.stringify( op.expectedResults ) +
@@ -192,7 +220,7 @@ Resources.preparedStatement = function( op )
 
     if( op.expectedResults )
     {
-      if( !deepEqual( op.expectedResults , data ) )
+      if( !this.testResults( data , op.expectedResults ) )
       {
         throw new Error( "Unexpected result." +
                          "\nExpected: " + JSON.stringify( op.expectedResults ) +
@@ -281,6 +309,78 @@ OperationRunner.prototype.fetchRows = function( statement , nfetch ) {
   }
 
   return data;
+};
+
+OperationRunner.prototype.testResults = function( actual , expected ) {
+  if( actual.length !== expected.length ) return false;
+  for( var i = 0; i < expected.length; i++ )
+  {
+    if( !this.testObjects( actual[i] , expected[i] ) ) return false;
+  }
+
+  return true;
+};
+
+OperationRunner.prototype.testObjects = function( actual , expected ) {
+  var key;
+  for( key in actual )
+  {
+    if( !expected.hasOwnProperty( key ) )
+    {
+      this.logFile.log( "Extra key: " + key );
+      return false;
+    }
+  }
+
+  for( key in expected )
+  {
+    if( !actual.hasOwnProperty( key ) )
+    {
+      this.logFile.log( "Missing key: " + key );
+      return false;
+    }
+    if( typeof expected[ key ] !== typeof actual[ key ] )
+    {
+      this.logFile.log( "Type expected: " + ( typeof expected[ key ] ) );
+      this.logFile.log( "Type received: " + ( typeof actual[ key ] ) );
+      return false;
+    }
+
+    if( this.opReader.getTestName().indexOf( "SMALLFLOAT" ) != -1 && typeof expected[ key ] == "number")
+    {
+      if( !testSmallFloat( expected[ key ] , actual[ key ] ) )
+      {
+        this.logFile.log( "Expected: " + expected[ key ] );
+        this.logFile.log( "Received: " + actual[ key ] );
+        this.logFile.log( "Expected: " + numberToBinaryString( expected[ key ] ) );
+        this.logFile.log( "Received: " + numberToBinaryString( actual[ key ] ) );
+        return false;
+      }
+    }
+    else
+    {
+      if( expected[ key ] !== actual[ key ] )
+      {
+        var eString, aString;
+        if( typeof expected[ key ] == "object" )
+        {
+          eString = JSON.stringify( expected[ key ] );
+          aString = JSON.stringify( actual[ key ] );
+        }
+        else
+        {
+          eString = expected[ key ];
+          aString = actual[ key ];
+        }
+
+        this.logFile.log( "Expected: " + eString );
+        this.logFile.log( "Received: " + aString );
+        return false;
+      }
+    }
+  }
+
+  return true;
 };
 
 module.exports = OperationRunner;
