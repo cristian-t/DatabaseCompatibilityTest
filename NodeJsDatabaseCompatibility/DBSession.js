@@ -46,4 +46,27 @@ DBSession.prototype.closePreparedStatement = function( id )
   delete this.preparedStatements[ id ];
 };
 
+DBSession.prototype.cleanUp = function()
+{
+  if( this.connection )
+  {
+    for( var id in this.preparedStatements )
+    {
+      var statement = this.preparedStatements[id];
+      try
+      {
+        if( statement.result ) statement.result.closeSync();
+        if( statement.stmt ) statement.stmt.closeSync();
+      }
+      catch( e ) {}
+    }
+
+    try
+    {
+      this.connection.closeSync();
+    }
+    catch( e ) {}
+  }
+};
+
 module.exports = DBSession;

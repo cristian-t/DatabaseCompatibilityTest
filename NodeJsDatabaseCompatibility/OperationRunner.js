@@ -176,9 +176,16 @@ Resources.preparedStatement = function( op )
     conn = session.getConnection();
     statement = session.getPreparedStatement( op.statementId );
 
-    if( op.bindings )
+    if( op.bindings && op.bindings.length > 0 )
     {
-      bindings = op.bindings.map( function( v ) { return v.value; } );
+      if( typeof op.bindings[0] == "object" && op.bindings[0].hasOwnProperty( "value" ) )
+      {
+        bindings = op.bindings.map( function( v ) { return v.value; } );
+      }
+      else
+      {
+        bindings = op.bindings;
+      }
       statement.stmt.bindSync( bindings );
     }
 
@@ -269,6 +276,10 @@ OperationRunner.prototype.run = function( callback )
     catch( e )
     {
       this.error( e.message );
+
+      this.log( "Cleaning up..." );
+      ClientManager.cleanUp();
+
       return {
         result : false,
         detail : e.message

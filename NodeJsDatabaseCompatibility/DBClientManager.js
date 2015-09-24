@@ -4,9 +4,9 @@ var DBSession = require( "./DBSession.js" );
 var DBCredentials = function( id )
 {
   this.id = id;
-  this.host = "9.25.157.64";
+  this.host = "9.25.157.41";
   this.port = 9091;
-  this.database = "testdb3";
+  this.database = "testdb4";
   this.username = "informix";
   this.password = "informix";
 };
@@ -66,11 +66,27 @@ function getSession( id )
   return sessions.hasOwnProperty( id ) ? sessions[ id ] : null;
 }
 
+function cleanUp()
+{
+  var id;
+  for( id in sessions )
+  {
+    sessions[ id ].cleanUp();
+  }
+
+  credentials = {};
+  sessions = {};
+
+  lastCredentials = null;
+  lastSession = null;
+}
+
 module.exports = {
   createCredentials : createCredentials,
   closeCredentials : closeCredentials,
   getCredentials : getCredentials,
   createSession : createSession,
   closeSession : closeSession,
-  getSession : getSession
+  getSession : getSession,
+  cleanUp : cleanUp
 };
